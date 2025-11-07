@@ -1,11 +1,75 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Home</title>
-        <link rel="stylesheet" href="css/app.css"></link>
-        <script src="js/app.js"></script>
-    </head>
-    <body style="text-align: center;">
-        <h2>Home Page!</h2>
-    </body>
+<head>
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="./css/app.css" />
+    <script src="./js/app.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../CSC210/index.html" class="logo">
+                <img src="images/FlowerLogo.jpg" alt="Logo" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="../CSC210/index.html">Home</a></li>
+                <li><a href="../CSC210/skills.html">My Skills</a></li>
+                <li><a href="../CSC210/projects.html">Projects</a></li>
+                <li><a href="../CSC210/about.html">Contact Me  Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="homeImage topLeft">
+        <img src="images/PeekingBlossoms.png" alt="SeeThrough Blossoms Image">
+    </div>
+    <div class="homeImage bottomRight">
+        <img src="images/PeekingBlossoms.png" alt="SeeThrough Roses Image">
+    </div>
+    <section class="homeQuote">
+        <!-- TODO: use api to generate quotes -->
+        <h1><q>Don't ever save anything for a special occasion. Being alive is the special occasion.</q> - Mary Engelbreit</h1>
+    </section>
+    <section class="homeSlides">
+        <p id="slideCountDown"></p>
+        <script>
+            let counter = 5;
+            setInterval(function(){
+                document.getElementById("slideCountDown").innerHTML = counter;
+                counter--;
+                if(counter < 0) counter = 5;
+            }, 1000);
+        </script>
+        <img id="slidePicture" src="images/slidePics/hotFlower.jpeg" alt="SeeThrough Roses Image">
+        <script>
+            let pics = [
+                "images/slidePics/beingAutism.jpeg",
+                "images/slidePics/pinkFlower.jpeg",
+                "images/slidePics/selfie.jpeg",
+                "images/slidePics/snowMan.jpeg",
+                "images/slidePics/withAva3.jpeg",
+                "images/slidePics/sunFlower.jpeg",
+                "images/slidePics/closeUp.jpeg",
+                "images/slidePics/mariGold.jpeg",
+                "images/slidePics/withAva4.jpeg",
+                "images/slidePics/fallTree.jpeg",
+            ];            
+            let index = 0;
+            setInterval(function(){
+                document.getElementById("slidePicture").src = pics[index];
+                index++;
+                if (index >= pics.length) index = 0;
+            }, 6000);
+        </script>
+    </section>
+    <footer class="homeImage bottomLeft">
+        <p>&copy; 2025 Projects Portfolio By Alison Waldsmith</p>
+    </footer>
+</body>
 </html>
+
+<!-- 
+Commit and Push to GitHub
+    *git add . (Add File to Repository)
+    *git commit -m "name commit"  (Commit File)
+    *git push  (Push Code to GitHub)
+-->

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="./css/app.css" />
+    <script src="./js/app.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/" class="logo">
+                <img src="images/FlowerLogo.jpg" alt="Logo" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="../CSC210/index.html">Home</a></li>
+                <li><a href="../CSC210/skills.html">My Skills</a></li>
+                <li><a href="../CSC210/projects.html">Projects</a></li>
+                <li><a href="../CSC210/about.html">Contact Me  Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="proImage left">
+        <img src="images/pinkForestL.jpg" alt="Forest Blossoms Image">
+    </div>
+    <div class="proImage right">
+        <img src="images/pinkForestR.jpg" alt="Forest Blossoms Image">
+    </div>
+    <proj class="ProjectDisplay">
+        <!-- TODO: list some of my projects -->
+        <div class="Project" id="Prog1">
+            <div class="ProjectPic">
+                <img class="ProPic" src="images/projectPics/progLab.png" alt="Project Picture" />
+                <div class="ProWorks">Half Implemented</div>
+            </div>            
+            <ul class="ProjectDetails">
+                <label class="ProName">Progressive Lab 2</label>
+                <label class="ProOpinion"><q>Annoying Project</q></label>
+                <label class="ProDescription">Website about Me</label>
+            </ul>
+            <div class="ProjectBtns">
+                <button>Download</button>
+                <button onclick="goTo(`file:///c%3A/Neumont/Fall%202025/CSC210/ProgressiveLab2/index.html`)">Open Project</button>
+            </div>
+        </div>
+        <div class="Project" id="Prog2">
+            <div class="ProjectPic">
+                <img class="ProPic" src="images/projectPics/NumberGuessGame.png" alt="Project Picture" />
+                <div class="ProWorks">Half Implemented</div>
+            </div>
+            <ul class="ProjectDetails">
+                <label class="ProName">Number Guessing Game</label>
+                <label class="ProOpinion"><q>Fun To Make</q></label>
+                <label class="ProDescription">Choose a difficulty and guess a number</label>
+            </ul>
+            <div class="ProjectBtns">
+                <button>Download</button>
+                <button onclick="goTo(`file:///c%3A/Neumont/Fall%202025/CSC210/GuessNumberLab/index.html`)">Open Project</button>
+            </div>
+        </div>
+        <div class="Project" id="Prog3">
+            <div class="ProjectPic">
+                <img class="ProPic" src="images/projectPics/Trivia.png" alt="Project Picture" />
+                <div class="ProWorks">Half Implemented</div>
+            </div>
+            <ul class="ProjectDetails">
+                <label class="ProName">Trivial Trivia</label>
+                <label class="ProOpinion"><q>APIs are tedious</q></label>
+                <label class="ProDescription">answer the questions correctly</label>
+            </ul>
+            <div class="ProjectBtns">
+                <button>Download</button>
+                <button onclick="goTo(`file:///c%3A/Neumont/Fall%202025/MTM282/Trivial_Trivia/index.html`)">Open Project</button>
+            </div>
+        </div>
+    </proj>
+    <footer>
+        <p>&copy; 2025 Projects Portfolio By Alison Waldsmith</p>
+    </footer>
+</body>
+</html>

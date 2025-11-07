@@ -1,0 +1,433 @@
+/* -------------------Pallette Stuff------------------- */
+:root{
+    --green1: #90b676;
+    --green2: #618b44;
+    --green3: #4c823b;
+    --green4: #41602d;
+    --text  : #2f4023;
+}
+
+/* -------------------Header Stuff------------------- */
+
+/* HEADER */
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+body {
+    background-color: var(--green1);
+}
+
+footer {
+    text-align: center;
+}
+
+/* HEADER NAV BAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--green2);
+    z-index: 999;
+}
+
+/* NAVIGATION */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* LINK DESIGN 1 */
+.nav-links a {
+    text-decoration: none;
+    color: #234025;
+    font-weight: 500;
+}
+
+/* LINK DESIGN 2 */
+.nav-links a:hover {
+    color: var(--green1);
+    transition: transform 0.3s ease;
+}
+
+/* HOME SECTION */
+.homeQuote {
+    display: block;
+    padding: 0 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.homeQuote h1 {
+    padding-top: 90px;
+    font-size: 20px;
+    white-space: nowrap;
+    text-align: center;
+    margin: 30px auto 10px;
+    overflow: visible;
+}
+
+/* -------------------Features Stuff------------------- */
+
+.ProjectDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+    padding-left: 230px;
+    padding-right: 230px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.Project {
+    background-color: var(--green2);
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px gray;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.ProjectDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.ProName {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.ProOpinion {
+    font-style: italic;
+    color: var(--text);
+}
+
+.ProDescription {
+    font-size: 1em;
+    color: var(--text);
+}
+
+.ProjectBtns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.ProjectBtns button {
+    padding: 8px 14px;
+    background-color: var(--green1);
+    color: var(--text);
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    width: 120px;
+}
+
+.ProjectBtns button:hover {
+    background-color: var(--green3);
+    transform: scale(1.03);
+}
+
+/* -------------------Order Stuff------------------- */
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+section h1 {
+    text-align: center;
+    color: #234025;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    text-align: center;
+    color: #3a5f3d;
+    margin-bottom: 30px;
+}
+
+.skillsLayout {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+    background-image: url("../images/pinkBeach.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--text);
+}
+
+.skillsBox {
+    width: 100%;
+    max-width: 800px; /* Optional: limits width on large screens */
+    background-color: var(--green2);
+    color: var(--text);
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px; /* Optional: adds a soft edge */
+}
+
+.aboutLayout {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+    background-image: url("../images/blossomBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--text);
+}
+
+.aboutBox {
+    width: 100%;
+    max-width: 800px; /* Optional: limits width on large screens */
+    background-color: var(--green2);
+    color: var(--text);
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px; /* Optional: adds a soft edge */
+}
+
+/* FORM LAYOUT */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/* FORM ROWS */
+form div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* LABELS */
+form label {
+    min-width: 140px;
+    font-weight: bold;
+    color: #234025;
+}
+
+/* INPUTS */
+form input {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #25932f;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: #f0fff2;
+}
+
+/* SUBMIT */
+form button[type="submit"] {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #25932f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #1e7a27;
+}
+
+/* -------------------Image Stuff------------------- */
+
+/* LOGO */
+.logo img {
+    height: 50px;
+    cursor: pointer;
+    border-radius: 45%;
+}
+
+/* HOME IMAGE */
+.homeImage {
+    position: fixed;
+    pointer-events: none;
+    z-index: 980;
+}
+
+.homeImage img{
+    height: auto;
+    display: block;
+    width: 350px; 
+}
+
+.topLeft{
+    top: 140px;
+    left: 0;
+}
+
+.bottomRight {
+    bottom: 0;
+    right: 0;
+}
+
+.bottomRight img {
+    transform: scaleX(-1);
+}
+
+.bottomLeft {
+    bottom: 0;
+    left: 50px;
+}
+
+/* PROJECT IMAGE */
+.proImage {
+    position: fixed;
+    z-index: 980;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    width: 200px;
+    overflow: hidden;
+}
+
+.proImage img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+.proImage.left{
+    left: 0;
+    padding-left: 10px;
+}
+
+
+.proImage.right {
+    right: 0;
+    padding-right: 10px;
+}
+
+/* HOME SLIDES */
+.homeSlides img {
+    display: block;
+    margin: 0 auto; /* centers horizontally */
+    max-width: 100%; /* scales down if needed */
+    height: 100%; /* preserves aspect ratio */
+    object-fit: cover; /* fills container without distortion */
+    text-align: center;
+}
+
+#slideCountDown{
+    text-align: center;
+}
+
+#slidePicture {
+    width: 100%;
+    height: 100%; /* fixed height or responsive */
+    max-width: 300px; /* or whatever fits your layout */
+    max-width: 300px; /* or whatever fits your layout */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeSlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* MJ IMAGES */
+.ProjectPic {
+    position: relative;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProPic {
+    height: 250px;
+    border-radius: 6%;
+    transition: opacity 0.3s ease;
+    position: absolute;
+}
+
+.ProWorks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
+    font-size: x-large;
+    font-weight: bold;
+    color: #234025;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+}
+
+.ProjectPic:hover .ProPic {
+    opacity: 0;
+}
+
+.ProjectPic:hover .ProWorks {
+    opacity: 1;
+}
+
+@media (max-width: 729px) {
+    .ProjectDisplay {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .ProjectsLayout {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .proImage {
+        display: none; /* hide side images on small screens */
+    }
+}
