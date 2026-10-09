@@ -9,7 +9,7 @@
     <header>
         <nav class="navbar">
             <a href="../Offical-Portfolio/index.html" class="logo">
-                <img src="images/FlowerLogo.jpg" alt="Logo" />
+                <img src="images\slidePics\Selfie.jpg" alt="Logo" />
             </a>
             <ul class="nav-links">
                 <li><a href="../Offical-Portfolio/index.html">Home</a></li>
@@ -20,18 +20,19 @@
         </nav>
     </header>
     <div class="homeImage topLeft">
-        <img src="images/PeekingBlossoms.png" alt="SeeThrough Blossoms Image">
+        <img src="images/LeftBranch.png" alt="SeeThrough Blossoms Image">
     </div>
     <div class="homeImage bottomRight">
-        <img src="images/PeekingBlossoms.png" alt="SeeThrough Roses Image">
+        <img src="images/RightBranch.png" alt="SeeThrough Roses Image">
     </div>
     <section class="homeQuote">
         <!-- TODO: use api to generate quotes -->
-        <h1><q>Don't ever save anything for a special occasion. Being alive is the special occasion.</q> - Mary Engelbreit</h1>
+        <h1><q>Time is not promised, Always live in the moment.</q></h1>
     </section>
-    <section class="homeSlides">
+    <!-- <section class="homeSlides">
         <p id="slideCountDown"></p>
         <script>
+            // Countdown
             let counter = 5;
             setInterval(function(){
                 document.getElementById("slideCountDown").innerHTML = counter;
@@ -39,30 +40,44 @@
                 if(counter < 0) counter = 5;
             }, 1000);
         </script>
+
         <img id="slidePicture" src="images/slidePics/hotFlower.jpeg" alt="SeeThrough Roses Image">
+
         <script>
             let pics = [
-                "images/slidePics/beingAutism.jpeg",
                 "images/slidePics/pinkFlower.jpeg",
-                "images/slidePics/selfie.jpeg",
                 "images/slidePics/snowMan.jpeg",
-                "images/slidePics/withAva3.jpeg",
                 "images/slidePics/sunFlower.jpeg",
-                "images/slidePics/closeUp.jpeg",
                 "images/slidePics/mariGold.jpeg",
-                "images/slidePics/withAva4.jpeg",
                 "images/slidePics/fallTree.jpeg",
-            ];            
-            let index = 0;
+                "images/slidePics/redFlower.jpeg",
+                "images/slidePics/hotFlower.jpeg",
+            ];
+
+            let lastPicNum = -1;
+
+            // Pick a random image immediately on page load
+            function pickRandom() {
+                let randomIndex = Math.floor(Math.random() * pics.length);
+                // Ensure the same image is not picked twice in a row
+                while (randomIndex === lastPicNum) {
+                    randomIndex = Math.floor(Math.random() * pics.length);
+                }
+                lastPicNum = randomIndex;
+                return pics[randomIndex];
+            }
+
+            // Set the first random image
+            document.getElementById("slidePicture").src = pickRandom();
+
+            // Change to a new random image every 6 seconds
             setInterval(function(){
-                document.getElementById("slidePicture").src = pics[index];
-                index++;
-                if (index >= pics.length) index = 0;
+                document.getElementById("slidePicture").src = pickRandom();
             }, 6000);
         </script>
-    </section>
+    </section> -->
     <footer class="homeImage bottomLeft">
-        <p>&copy; 2025 Projects Portfolio By Alison Waldsmith</p>
+        <p>&copy; 2026 Projects Portfolio By Alison Waldsmith</p>
     </footer>
 </body>
 </html>
