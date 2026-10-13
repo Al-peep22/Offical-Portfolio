@@ -60,6 +60,12 @@ footer {
     font-weight: 500;
 }
 
+.homeQuote{
+    color: #172c19;
+    right: 50%;
+    font-size: fit-content;
+}
+
 /* LINK DESIGN 2 */
 .nav-links a:hover {
     color: var(--white);
@@ -68,11 +74,21 @@ footer {
 
 /* LOGO */
 .logo img {
-    height: 50px;
+    Width: 300px;
     cursor: pointer;
-    border-radius: 45%;
-    border: 3px solid var(--gray2);
 }
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--green3);
+    z-index: 1000;
+}
+
 
 
 /* =========================================================
@@ -97,31 +113,79 @@ footer {
 }
 
 /* HOME IMAGE */
-.homeImage {
+.collage img {
     position: fixed;
     pointer-events: none;
     z-index: -1;
+    border-radius: 8px;
 }
 
-.homeImage img{
-    height: auto;
-    display: block;
-    width: 900px; 
+.HomePortrait {
+    width: 440px;
+    height: 620px;
+    top: 15%;
+    left: 5%;
+    border: 5px solid var(--green3);
 }
 
-.topLeft{
-    top: 140px;
-    left: 0;
+.disclaimer {
+    position: fixed;
+    top: 86%;
+    left: 15%;
+    font-size: 15px;
+    color: var(--green4);
 }
 
-.bottomRight {
-    bottom: 0;
-    right: 0;
+.homeIntro {
+    position: fixed;
+    top: 30%;        
+    right: 10%;       
+    width: 400px;  
+    color: var(--green4);
 }
 
-.bottomLeft {
-    bottom: 0;
-    left: 50px;
+.homeIntroTitle {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.homeIntroBio {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.homeIntroBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--green3);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* TOP RIGHT OF WIDE */
+.img-square-1 {
+    width: 200px;
+    top: 120px;
+    right: 5%;
+}
+
+/* HIGHER RIGHT OF SQUARE */
+.img-square-2 {
+    width: 200px;
+    top: 40%;
+    right: 20%;
+    z-index: -1;
+}
+
+/* LOWER RIGHT OF THAT */
+.img-square-3 {
+    width: 200px;
+    top: 580px;
+    right: 2%;
 }
 
 /* HOME SLIDES */
@@ -159,7 +223,7 @@ footer {
     align-items: center;
     padding: 100px;
     box-sizing: border-box;
-    background-image: url("../images/pinkBeach.jpg");
+    background-image: url("../images/art4.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -219,6 +283,7 @@ footer {
     font-size: 1.2em;
     font-weight: bold;
     color: var(--text);
+    padding-top: 5px;
 }
 
 .ProOpinion {
@@ -273,12 +338,12 @@ footer {
 
 .proImage.left{
     left: 0;
-    padding-left: 10px;
+    padding-left: 0px;
 }
 
 .proImage.right {
     right: 0;
-    padding-right: 10px;
+    padding-right: 0px;
 }
 
 /* MJ IMAGES */
@@ -333,7 +398,7 @@ footer {
     align-items: center;
     padding: 100px;
     box-sizing: border-box;
-    background-image: url("../images/blossomBackground.jpg");
+    background-image: url("../images/art5.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
