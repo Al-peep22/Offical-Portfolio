@@ -282,3 +282,11 @@ footer {
     padding: 20px;
     color: var(--white);
 }
+
+/* RADIO-BUTTON STYLE SELECTED STATE */
+button.selected {
+    background-color: var(--white);
+    color: var(--teal-dark);
+    border: 2px solid var(--teal-bright);
+    transform: scale(1.05);
+}

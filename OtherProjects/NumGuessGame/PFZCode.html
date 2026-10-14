@@ -11,16 +11,16 @@
     <!-- Difficulty Selection -->
     <div class="PFZDifficulty">
         <h3>Difficulty</h3>
-        <button onclick="setDifficulty('Easy')">Easy</button>
-        <button onclick="setDifficulty('Medium')">Medium</button>
-        <button onclick="setDifficulty('Hard')">Hard</button>
+        <button id="diffEasy" onclick="selectDifficulty('Easy')">Easy</button>
+        <button id="diffMedium" onclick="selectDifficulty('Medium')">Medium</button>
+        <button id="diffHard" onclick="selectDifficulty('Hard')">Hard</button>
     </div>
 
     <!-- Guess Limit Toggle -->
     <div class="PFZLimit">
         <h3>Limited Guesses</h3>
-        <button onclick="setGuessLimit('On')">On</button>
-        <button onclick="setGuessLimit('Off')">Off</button>
+        <button id="limitOn" onclick="selectGuessLimit('On')">On</button>
+        <button id="limitOff" onclick="selectGuessLimit('Off')">Off</button>
     </div>
 
     <!-- Instructions -->

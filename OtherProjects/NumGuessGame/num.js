@@ -249,3 +249,38 @@ function switchPopUp(closeId, openId) {
     document.querySelector("." + closeId).style.display = "none";
     document.querySelector("." + openId).style.display = "flex";
 }
+
+// RADIO BUTTON STYLE FOR DIFFICULTY
+function selectDifficulty(level) {
+    currentDifficulty = level;
+
+    // Remove selected class from all difficulty buttons
+    document.getElementById("diffEasy").classList.remove("selected");
+    document.getElementById("diffMedium").classList.remove("selected");
+    document.getElementById("diffHard").classList.remove("selected");
+
+    // Add selected class to the chosen one
+    if (level === "Easy") document.getElementById("diffEasy").classList.add("selected");
+    if (level === "Medium") document.getElementById("diffMedium").classList.add("selected");
+    if (level === "Hard") document.getElementById("diffHard").classList.add("selected");
+}
+
+
+// RADIO BUTTON STYLE FOR GUESS LIMIT
+function selectGuessLimit(onOff) {
+    setGuessLimit(onOff);
+
+    // Remove selected class from both
+    document.getElementById("limitOn").classList.remove("selected");
+    document.getElementById("limitOff").classList.remove("selected");
+
+    // Add selected class to the chosen one
+    if (onOff === "On") document.getElementById("limitOn").classList.add("selected");
+    if (onOff === "Off") document.getElementById("limitOff").classList.add("selected");
+}
+
+// DEFAULT SELECTED BUTTONS
+window.onload = () => {
+    document.getElementById("diffEasy").classList.add("selected");
+    document.getElementById("limitOn").classList.add("selected");
+};
