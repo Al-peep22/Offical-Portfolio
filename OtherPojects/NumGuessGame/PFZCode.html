@@ -1,30 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="./OtherProjects/NumGuessGame/num.css" />
-    <script src="./OtherProjects/NumGuessGame/num.js"></script>
+    <link rel="stylesheet" href="./num.css" />
+    <script src="./num.js"></script>
 </head>
 <body>
-    <div class="GameOptions">
-        <div class="GameOption1">
-            <img src="./images/art1.jpg" alt="High or Low Game Pic" />
-            <h3>High or Low</h3>
-            <button onclick="showInstructions(0)">How to Play</button>
-            <button onclick="startGame(0)">Play</button>
-        </div>
-        <div class="GameOption2">
-            <img src="./images/art1.jpg" alt="PFZ Game Pic" />
-            <h3>PFZ Code</h3>
-            <button onclick="showInstructions(1)">How to Play</button>
-            <button onclick="startGame(1)">Play</button>
-        </div>
-        <div class="GamePopUp">
-            <p class="Instructions"></p>
-            <button onclick="closePopUp('GamePopUp')">Close</button>
-        </div>
+<div class="PFZOptions">
+    <h2 class="PFZTitle">PFZ Code</h2>
+
+    <!-- Difficulty Selection -->
+    <div class="PFZDifficulty">
+        <h3>Difficulty</h3>
+        <button onclick="setDifficulty('Easy')">Easy</button>
+        <button onclick="setDifficulty('Medium')">Medium</button>
+        <button onclick="setDifficulty('Hard')">Hard</button>
     </div>
-    <footer>
-        <p>&copy; 2026 Projects Portfolio By Alison Waldsmith</p>
-    </footer>
+
+    <!-- Guess Limit Toggle -->
+    <div class="PFZLimit">
+        <h3>Limited Guesses</h3>
+        <button onclick="setGuessLimit('On')">On</button>
+        <button onclick="setGuessLimit('Off')">Off</button>
+    </div>
+
+    <!-- Instructions -->
+    <button class="PFZInstructionsBtn" onclick="showInstructions(1)">How to Play</button>
+
+    <!-- Navigation -->
+    <div class="PFZNav">
+        <button onclick="goHome()">Back</button>
+        <button onclick="generatePFZCode();">Play</button>
+    </div>
+</div>
+
+<!-- GAME SCREEN -->
+<div class="PFZGame">
+    <div class="PFZMenu">
+        <button onclick="showInstructions(1)">Help</button>
+        <button onclick="resetPFZGame()">Reset</button>
+        <button onclick="goHome()">Exit</button>
+    </div>
+
+    <div class="PFZGameDisplay">
+        <p class="PFZGameText">Enter your code guess:</p>
+        <input type="text" id="PFZGuessInput" placeholder="Enter code" />
+        <button onclick="submitPFZGuess()">Submit Guess</button>
+        <p class="PFZFeedback"></p>
+    </div>
+</div>
+
+<!-- POPUP -->
+<div class="GamePopUp">
+    <p class="Instructions"></p>
+    <button onclick="closePopUp('GamePopUp')">Close</button>
+</div>
 </body>
-</html>

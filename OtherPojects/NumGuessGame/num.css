@@ -1,0 +1,284 @@
+/* ================================
+   GLOBAL STYLES
+================================ */
+
+:root {
+    --teal-dark: #0f3b3a;
+    --teal-mid: #14514f;
+    --teal-light: #1c6f6c;
+    --teal-bright: #2aa39f;
+    --white: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--teal-dark);
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+}
+
+/* Shared Button Style */
+button {
+    padding: 10px 20px;
+    background-color: var(--teal-bright);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--white);
+    color: var(--teal-dark);
+    transform: scale(1.03);
+}
+
+/* Shared Card Style */
+.GameCard {
+    background-color: var(--teal-mid);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    text-align: center;
+}
+
+/* ================================
+   MAIN MENU (GameOptions)
+================================ */
+
+.GameOptions {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    margin-top: 80px;
+}
+
+.GameOption1, .GameOption2 {
+    background-color: var(--teal-mid);
+    padding: 20px;
+    width: 260px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px black;
+}
+
+.GameOption1 img,
+.GameOption2 img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.GameOption1 h3,
+.GameOption2 h3 {
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+/* ================================
+   POPUP WINDOW
+================================ */
+
+.GamePopUp {
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--teal-light); /* NOT transparent */
+    padding: 25px;
+    width: 320px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px black;
+}
+
+.GamePopUp p {
+    margin-bottom: 15px;
+    color: var(--white);
+}
+
+/* ================================
+   HIGH OR LOW OPTIONS SCREEN
+================================ */
+
+.HLOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 450px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: var(--teal-mid);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px black;
+}
+
+.HLDifficulty, .HLOptions > div {
+    background-color: var(--teal-light);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.HLDifficulty button,
+.HLOptions > div button {
+    margin: 5px;
+}
+
+/* ================================
+   HIGH OR LOW GAME SCREEN
+================================ */
+
+.HLGame {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 450px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: var(--teal-mid);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px black;
+}
+
+.HLMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.HLMenu button {
+    width: 30%;
+}
+
+.HLGameText {
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+#HLGuessInput {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid var(--teal-bright);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background-color: var(--white);
+    color: var(--teal-dark);
+}
+
+.HLFeedback {
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--white);
+}
+
+/* ================================
+   PFZ OPTIONS SCREEN
+================================ */
+
+.PFZOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 450px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: var(--teal-mid);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px black;
+}
+
+.PFZOptions h2 {
+    color: var(--white);
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.PFZDifficulty, .PFZLimit {
+    background-color: var(--teal-light);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.PFZDifficulty h3,
+.PFZLimit h3 {
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.PFZDifficulty button,
+.PFZLimit button {
+    margin: 5px;
+}
+
+.PFZNav button {
+    margin: 5px;
+}
+
+/* ================================
+   PFZ GAME SCREEN
+================================ */
+
+.PFZGame {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 450px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: var(--teal-mid);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px black;
+}
+
+.PFZMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.PFZMenu button {
+    width: 30%;
+}
+
+.PFZGameText {
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+#PFZGuessInput {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid var(--teal-bright);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background-color: var(--white);
+    color: var(--teal-dark);
+}
+
+.PFZFeedback {
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--white);
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: var(--white);
+}
