@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./OtherProjects/NumGuessGame/num.css" />
+    <script src="./OtherProjects/NumGuessGame/num.js"></script>
+</head>
+<body>
+    <div class="HLOptions">
+        <div class="HLDifficulty">
+            <!-- difficulty levels -->
+            <button>Easy</button>
+            <button>Medium</button>
+            <button>Hard</button>
+        </div>
+        <div>
+            <!-- limit guesses -->
+            <button>On</button>
+            <button>Off</button>
+        </div>
+        <button onclick="showInstructions(0)">Show Instructions</button>
+        <div>
+            <button onclick="goHome()">Back</button>
+            <button onclick="switchPopUp('HLOptions', 'HLGame')">Play</button>
+        </div>
+    </div>
+    <div class="HLGame">
+        <div class="HLMenu">
+            <button onclick="showInstructions(0)">Help</button>
+            <button >Reset</button>
+            <button>Exit</button>
+        </div>
+    </div>
+    <div class="GamePopUp">
+        <p class="Instructions"></p>
+        <button onclick="closePopUp('GamePopUp')">Close</button>
+    </div>
+    <footer>
+        <p>&copy; 2026 Projects Portfolio By Alison Waldsmith</p>
+    </footer>
+</body>
+</html>

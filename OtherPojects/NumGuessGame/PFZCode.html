@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./OtherProjects/NumGuessGame/num.css" />
+    <script src="./OtherProjects/NumGuessGame/num.js"></script>
+</head>
+<body>
+    <div class="GameOptions">
+        <div class="GameOption1">
+            <img src="./images/art1.jpg" alt="High or Low Game Pic" />
+            <h3>High or Low</h3>
+            <button onclick="showInstructions(0)">How to Play</button>
+            <button onclick="startGame(0)">Play</button>
+        </div>
+        <div class="GameOption2">
+            <img src="./images/art1.jpg" alt="PFZ Game Pic" />
+            <h3>PFZ Code</h3>
+            <button onclick="showInstructions(1)">How to Play</button>
+            <button onclick="startGame(1)">Play</button>
+        </div>
+        <div class="GamePopUp">
+            <p class="Instructions"></p>
+            <button onclick="closePopUp('GamePopUp')">Close</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 Projects Portfolio By Alison Waldsmith</p>
+    </footer>
+</body>
+</html>
