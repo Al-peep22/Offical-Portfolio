@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./trivia.css" />
+    <script src="./trivia.js"></script>
+</head>
+<body>
+    <div class="GameOptions">
+        <div class="GameOption1">
+            <img src="./Bingo.png" alt="High or Low Game Pic" />
+            <h3>Bingo Trivia</h3>
+            <button onclick="showInstructions(0)">How to Play</button>
+            <button onclick="startGame(0)">Play</button>
+        </div>
+        <div class="GameOption2">
+            <img src="./Classic.png" alt="PFZ Game Pic" />
+            <h3>Classic Trivia</h3>
+            <button onclick="showInstructions(1)">How to Play</button>
+            <button onclick="startGame(1)">Play</button>
+        </div>
+        <div class="GameOption3">
+            <img src="./Jeopardy.png" alt="PFZ Game Pic" />
+            <h3>Jeopardy Trivia</h3>
+            <button onclick="showInstructions(2)">How to Play</button>
+            <button onclick="startGame(2)">Play</button>
+        </div>
+    </div>
+    <div class="GamePopUp">
+        <p class="Instructions"></p>
+        <button onclick="closePopUp('GamePopUp')">Close</button>
+    </div>
+    <footer>
+        <p>&copy; 2026 Projects Portfolio By Alison Waldsmith</p>
+    </footer>
+</body>
+</html>

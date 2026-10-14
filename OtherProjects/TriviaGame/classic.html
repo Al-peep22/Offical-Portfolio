@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./trivia.css" />
+    <script src="./trivia.js"></script>
+</head>
+<body>
+    <div class="TriviaOptions">
+        <div class="trivCategory">
+            <h3>Category</h3>
+            <dropdown></dropdown>
+        </div>
+        <div class="trivDifficulty">
+            <h3>Difficulty</h3>
+            <button id="diffEasy" onclick="">Easy</button>
+            <button id="diffMedium" onclick="">Medium</button>
+            <button id="diffHard" onclick="">Hard</button>
+        </div>
+        <button onclick="showInstructions(0)">Show Instructions</button>
+        <div>
+            <button onclick="goHome()">Back</button>
+            <button onclick="startClassicTrivia();">Play</button>
+        </div>
+    </div>
+    <div class="ClassicTriviaGame">
+        <div class="TopBar">
+            <button onclick="exitHLGame()">Exit</button>
+            <p class="classicTrivStreak">Streak: </p>
+            <p class="classicTrivCorrect">Answered Correct: </p>
+        </div>
+        <div class="ClassicTriviaDisplay">
+            <p class="classicTrivQ">Something?</p>
+            <button class="choice1">so</button>
+            <button class="choise2">me</button>
+            <button class="choise3">thi</button>
+            <button class="choice4">ng</button>
+        </div>
+    </div>
+    <div class="GamePopUp">
+        <p class="Instructions"></p>
+        <button onclick="closePopUp('GamePopUp')">Close</button>
+    </div>
+    <footer>
+        <p>&copy; 2026 Projects Portfolio By Alison Waldsmith</p>
+    </footer>
+</body>
+</html>
+<!-- https://opentdb.com/api.php?amount=10&category=27&difficulty=medium&type=multiple -->
+<!-- https://opentdb.com/api.php?amount=NUM&category=CAT&difficulty=DIFF&type=multiple -->sw

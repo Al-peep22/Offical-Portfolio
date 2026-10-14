@@ -1,4 +1,3 @@
-const gameNames = ["High or Low", "PFZ Code"];
 const gameInstructions = [
     "In High or Low, you guess the number within a range and be givenhigher or lower counting the guesses till you get the right number. The harder the difficulty the longer the range is and the less guesses you have to get the right number.",
     "In PFZ Code, you solve the code by guessing the right number combination. P stands for Perfect, F stands for Found, and Z stands for Zero. A Perfect means you guessed the right number in the right position, a Found means you guessed the right number but in the wrong position, and a Zero means you guessed the wrong number. The harder the difficulty the longer the code is and the less guesses you have to get the right code."
